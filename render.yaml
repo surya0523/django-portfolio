@@ -1,7 +1,9 @@
 # render.yaml
 
 - type: web
-  name: my-portfolio-app
+  name: portfolio_project
   env: python
   buildCommand: "pip install -r requirements.txt && python manage.py collectstatic --noinput"
   startCommand: "gunicorn portfolio_project.wsgi"
+
+  
